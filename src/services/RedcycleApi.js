@@ -1,12 +1,12 @@
-import { mockPosts } from "../components/App/Home/MockPosts";
+import axios from "axios";
 
 const getPosts = () => {
     return new Promise((resolve, reject) => {
-        mockPosts(30).then(posts => {
-            resolve(posts);
+        axios.get("https://fakestoreapi.com/products?limit=10").then(response => {
+            resolve(response.data);
         }).catch(error => {
             reject(error);
-        })
+        });
     });
 }
 
