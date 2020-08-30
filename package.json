@@ -17,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:github-page": "rm -R github-page && react-scripts build && cp -R build/ github-page",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
