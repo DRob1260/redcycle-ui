@@ -13,7 +13,7 @@ const Home = () => {
     }, []);
 
   return (
-      <div className={"App"} data-testid={"App"}>
+      <div className={"Home"} data-testid={"Home"}>
           <div className={"card-columns"}>
               {posts.map((post, index) => (
                   <React.Fragment key={`post-${index}`}>

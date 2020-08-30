@@ -1,7 +1,11 @@
 .PostCard .card {
-    background-color: #CE1126;
+    background-color: #385170;
     border-radius: 15px;
     border-color: gray;
+}
+
+.PostCard .card .xs {
+
 }
 
 .PostCard img {
@@ -14,6 +18,6 @@
 }
 
 .PostCard .card-text {
-    color: black;
+    color: lightgray;
     text-align: left;
 }
