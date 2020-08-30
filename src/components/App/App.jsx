@@ -10,7 +10,7 @@ function App() {
         <BrowserRouter>
             <Navigator />
             <Switch>
-                <Route path={"/"}>
+                <Route path={"/redcycle-ui"}>
                     <Home />
                 </Route>
             </Switch>
