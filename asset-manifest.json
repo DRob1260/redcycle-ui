@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/redcycle-ui/static/css/main.35f56485.chunk.css",
+    "main.js": "/redcycle-ui/static/js/main.e9167c31.chunk.js",
+    "main.js.map": "/redcycle-ui/static/js/main.e9167c31.chunk.js.map",
+    "runtime-main.js": "/redcycle-ui/static/js/runtime-main.09ff817a.js",
+    "runtime-main.js.map": "/redcycle-ui/static/js/runtime-main.09ff817a.js.map",
+    "static/css/2.f3cffc9e.chunk.css": "/redcycle-ui/static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.825f2469.chunk.js": "/redcycle-ui/static/js/2.825f2469.chunk.js",
+    "static/js/2.825f2469.chunk.js.map": "/redcycle-ui/static/js/2.825f2469.chunk.js.map",
+    "index.html": "/redcycle-ui/index.html",
+    "precache-manifest.055fa2208354461747aa7f175b02be70.js": "/redcycle-ui/precache-manifest.055fa2208354461747aa7f175b02be70.js",
+    "service-worker.js": "/redcycle-ui/service-worker.js",
+    "static/css/2.f3cffc9e.chunk.css.map": "/redcycle-ui/static/css/2.f3cffc9e.chunk.css.map",
+    "static/css/main.35f56485.chunk.css.map": "/redcycle-ui/static/css/main.35f56485.chunk.css.map",
+    "static/js/2.825f2469.chunk.js.LICENSE.txt": "/redcycle-ui/static/js/2.825f2469.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09ff817a.js",
+    "static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.825f2469.chunk.js",
+    "static/css/main.35f56485.chunk.css",
+    "static/js/main.e9167c31.chunk.js"
+  ]
+}
