@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getPosts } from "../../../services/RedcycleApi";
 import { PostCard } from "./PostCard/PostCard";
-import "./Home.css";
+import "./Home.scss";
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
