@@ -7,3 +7,9 @@ services:
     ports:
       - "2601:3000"
     restart: on-failure
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./public:/usr/src/app/public
