@@ -31,7 +31,8 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,scss}": [
-      "eslint . --fix", "git add"
+      "eslint . --fix",
+      "git add"
     ]
   },
   "husky": {
@@ -52,7 +53,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.11.0",
     "eslint-config-standard": "^15.0.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
