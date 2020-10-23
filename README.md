@@ -6,6 +6,7 @@ It's recommended to have [node.js](https://nodejs.org/en/), [Docker](https://www
 The project can be run directly using npm or it can be run using Docker. 
 
 ##### npm
+`npm install`
 `npm run start`
 
 ##### Docker
