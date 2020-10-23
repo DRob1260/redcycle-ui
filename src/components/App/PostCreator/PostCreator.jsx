@@ -12,7 +12,15 @@ export const PostCreator = () => {
 
   return (
     <div>
-      <h1 className={'PostCreator'}>Welcome, {username || 'User'}!</h1>
+      {username ?
+          <div>
+            <h1 className={'PostCreator'}>Welcome, {username || 'User'}!</h1>
+          </div>
+        :
+          <div>
+            <h1>Login</h1>
+          </div>
+      }
     </div>
   )
 }
