@@ -14,7 +14,7 @@ export const PostCreator = () => {
     <div>
       {username ?
           <div>
-            <h1 className={'PostCreator'}>Welcome, {username || 'User'}!</h1>
+            <h1 className={'PostCreator'}>Welcome, {username}!</h1>
           </div>
         :
           <div>
