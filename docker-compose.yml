@@ -13,3 +13,12 @@ services:
     volumes:
       - ./src:/usr/src/app/src
       - ./public:/usr/src/app/public
+  api:
+    build:
+      context: ../redcycle-api
+      dockerfile: dev.Dockerfile
+    ports:
+      - "2602:8000"
+    restart: on-failure
+    volumes:
+      - ../redcycle-api:/code
