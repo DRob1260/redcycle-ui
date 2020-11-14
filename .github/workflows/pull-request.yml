@@ -10,12 +10,9 @@ jobs:
         uses: actions/checkout@master
       - name: Install Dependencies
         run: npm install
+      - name: start
+        run: npm run start && wait-on http://localhost:3000
       - name: test
-        run: npm run cypress:headless
-      - name: save test artifacts
-        uses: actions/upload-artifact@v2
+        uses: cypress-io/github-action@v1
         with:
-          name: EOT
-          path: |
-            cypress/videos
-            cypress/screenshots
+          config-file: cypress.json
