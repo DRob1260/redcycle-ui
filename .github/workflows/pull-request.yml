@@ -17,9 +17,9 @@ jobs:
       - name: test
         run: npm run cypress:headless
       - name: save test artifacts
-          uses: actions/upload-artifact@v2
-          with:
-            name: EOT
-            path: |
-              cypress/videos
-              cypress/screenshots
+        uses: actions/upload-artifact@v2
+        with:
+          name: EOT
+          path: |
+            cypress/videos
+            cypress/screenshots
