@@ -34,5 +34,5 @@ module.exports = {
     'import/first': 'error',
     'prettier/prettier': ["error"]
   },
-  ignorePatterns: ["src/serviceWorker.js"]
+  ignorePatterns: ["src/serviceWorker.js", "cypress/**"]
 }

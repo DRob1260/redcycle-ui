@@ -1,0 +1,24 @@
+name: Pull Request Workflow
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+          run: npm install
+      - name: test
+        run: npm run cypress:headless
+        uses: actions/upload-artifact@v2
+        with:
+          name: EOT
+          path: |
+            cypress/videos
+            cypress/screenshots
