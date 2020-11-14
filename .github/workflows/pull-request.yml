@@ -11,7 +11,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: start
-        run: npm run start && wait-on http://localhost:3000
+        run: |
+          npm install pm2 -g
+          pm2 start npm -- start
       - name: test
         uses: cypress-io/github-action@v1
         with:
