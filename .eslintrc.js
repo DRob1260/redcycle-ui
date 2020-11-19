@@ -1,27 +1,38 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
-    jest: true
+    jest: true,
+    es6: true
+  },
+  settings: {
+    react: {
+      version: "automatic"
+    }
   },
   extends: [
     'plugin:react/recommended',
-    'standard'
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'prettier'
   ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 12,
+    ecmaVersion: "2019",
     sourceType: 'module'
   },
   plugins: [
-    'react'
+    'react',
+    'import',
+    'prettier'
   ],
   rules: {
-    'import/first': 'error',
     'no-console': 'warn',
     'no-eval': 'error',
-    'react/prop-types': 'off'
-  }
+    'react/prop-types': 'off',
+    'import/first': 'error',
+    'prettier/prettier': ["error"]
+  },
+  ignorePatterns: ["src/serviceWorker.js", "cypress/**"]
 }

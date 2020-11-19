@@ -5,9 +5,25 @@ It's recommended to have [node.js](https://nodejs.org/en/), [Docker](https://www
 #### Run
 The project can be run directly using npm or it can be run using Docker. 
 
-##### npm
-`npm install`
-`npm run start`
-
 ##### Docker
-`docker-compose up`
+`docker-compose.yml` is set up to run redcycle-api alongside this project. It's expecting redcycle-api to be in the same directory as this project. 
+```
+docker-compose up --build
+```
+
+##### npm
+```
+npm install
+npm run start
+```
+
+#### Test
+
+##### Cypress
+Make sure `baseUrl` in `cypress.json` is set to the address where the UI is running.
+
+```
+npm run cypress
+```
+
+
